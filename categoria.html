@@ -8,11 +8,8 @@
     <title>kindacat - Camas</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- remove in production -->
-    <meta http-equiv="Cache-control" content="no-cache">
+    <!-- meta http-equiv="Cache-control" content="no-cache" -->
     <link rel="icon" href="assets/images/favicon.png">
-    <link rel="stylesheet" href="assets/css/slideshow.css?2023121001" type="text/css">
-    <link rel="stylesheet" href="assets/css/carousel.css?2023121001" type="text/css">
     <link rel="stylesheet" href="assets/css/styles.css?2023121001" type="text/css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
@@ -44,8 +41,9 @@
                     <div class="layer-nav-tab">
                         <div class="top-nav-tab">
                             <span>Produtos</span>
-                            <label for="main-menu-switch" class="main-menu-opened"><span
-                                    class="material-symbols-outlined">close</span></label>
+                            <label for="main-menu-switch" class="main-menu-opened">
+                                <span class="material-symbols-outlined">close</span>
+                            </label>
                         </div>
                         <menu>
                             <li><a href="#">Bebedouros</a></li>
@@ -61,7 +59,7 @@
             <search>
                 <form class="search-store" action="#">
                     <button type="submit"><img alt="Pesquisar" width="20px" height="100%"
-                            src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/search/default/24px.svg" /></button>
+                            src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/search/default/24px.svg"></button>
                     <input type="search" placeholder="Pesquisar...">
                 </form>
             </search>
@@ -69,8 +67,28 @@
 
         <section class="user-things">
             <div class="login-logout">
-                <span class="material-symbols-outlined">person</span>
-                <span>Iniciar Sessão</span>
+                <!-- session init begin -->
+                <div class="on-off-popup">
+                    <input type="checkbox" id="init-session">
+                    <label for="init-session" class="init-session-label">
+                        <span class="material-symbols-outlined">person</span>
+                        <span>Iniciar Sessão</span>
+                    </label>
+                </div>
+                <div class="init-session-popup">
+                    <form action="#" method="post">
+                        <label for="username">Email</label>
+                        <input type="email" id="username" name="username" autocomplete="username">
+                        <label for="password">Palavra-Passe</label>
+                        <input type="password" id="password" name="password" autocomplete="password">
+                        <div>
+                            <button>Entrar</button>
+                            <button>Criar Conta</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- session init end -->
+
             </div>
             <div class="shopping-cart">
                 <span class="material-symbols-outlined">shopping_cart</span>
@@ -213,7 +231,7 @@
     </main>
 
     <footer>
-        <section class="footer-columns">
+        <div class="footer-columns">
             <div>
                 <span class="footer-column-title">Sobre Nós</span>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, purus quis lacinia feugiat,
@@ -241,7 +259,7 @@
                 </ul>
             </div>
             <div>
-                <img src="assets/images/logotipo-kindacat.svg" width="100%" height="auto" />
+                <img src="assets/images/logotipo-kindacat.svg" alt="logotipo" width="100%" height="auto">
                 <ul class="store-contacts">
                     <li class="contact-mailto"><a href="mailto:info@kindacat.com">info@kindacat.com</a></li>
                     <li class="contact-phone">
@@ -260,10 +278,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="footer-copyright">&copy; 2023 kindacat Lda. Todos os direitos reservados</section>
+        </div>
+        <div class="footer-copyright">&copy; 2023 kindacat Lda. Todos os direitos reservados</div>
     </footer>
-    <script type="text/javascript" src="assets/js/index.js?2023121001"></script>
+    <script src="assets/js/index.js?2023121001"></script>
 </body>
 
 </html>

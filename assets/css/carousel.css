@@ -62,24 +62,11 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
     width: calc((100% + 15px) * 6);
     gap: 20px;
     animation: carousel-products 30s ease infinite;
 }
-
-.product-sample {
-    text-align: center;
-    width: 100%;
-    border: 1px solid #e0e0e0;
-    padding: 10px;
-}
-
-.product-sample a {
-    color: #000;
-    text-decoration: none;
-}
-
 
 /* mobile */
 @media (min-width: 576px) {
