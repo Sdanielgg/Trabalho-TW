@@ -1,0 +1,100 @@
+/* latin-ext */
+/*
+ * Slideshow styles
+ * Last Modification: 2023-12-10 10:58:22
+ * (c) 2023 Petúnia Dias
+ */
+
+.slide-show-products {
+    text-align: center;
+    overflow: hidden;
+    height: 510px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #c5c5c5;
+}
+
+@keyframes slide-products {
+    20% {
+        margin-left: 0px;
+    }
+
+    30% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -100%;
+    }
+
+    60% {
+        margin-left: calc(-100% * 2);
+    }
+
+    70% {
+        margin-left: calc(-100% * 2);
+    }
+
+    80% {
+        margin-left: calc(-100% * 3);
+    }
+
+    90% {
+        margin-left: calc(-100% * 3);
+    }
+}
+
+.slide-show-products>.slide-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: calc(100% * 4);
+    animation: slide-products 18s ease infinite;
+}
+
+.slide-show-products .slide {
+    display: flex;
+    height: 510px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    /* border: 1px solid #000; */
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: darken;
+    background-color: #00000085;
+    text-decoration: none;
+    padding: 40px;
+    cursor: pointer;
+}
+
+.slide:nth-child(1) {
+    background-image: url('../../assets/images/slides/slide-01.jpg');
+}
+
+.slide:nth-child(2) {
+    background-image: url('../../assets/images/slides/slide-02.jpg');
+}
+
+.slide:nth-child(3) {
+    background-image: url('../../assets/images/slides/slide-03.jpg');
+}
+
+.slide:nth-child(4) {
+    background-image: url('../../assets/images/slides/slide-04.jpg');
+}
+
+.slide>h1 {
+    text-transform: uppercase;
+    font-size: xx-large;
+    text-shadow: 1px 1px 5px black;
+}
+
+.slide>p {
+    font-weight: normal;
+    font-size: x-large;
+}

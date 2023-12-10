@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!--
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+-->
+
+<head>
+    <title>kindacat - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- remove in production -->
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/slideshow.css?2023121001" type="text/css">
+    <link rel="stylesheet" href="assets/css/carousel.css?2023121001" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css?2023121001" type="text/css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <meta name="msapplication-navbutton-color" content="rgb(8, 7, 7)">
+    <meta name="apple-mobile-web-app-status-bar-style" content="rgb(8, 7, 7)">
+    <meta name="description" content="Tecnologias Web 23/ 24 kindacat">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Petúnia Dias">
+    <script>
+        /* <![CDATA[ */
+        /* ]]> */
+    </script>
+</head>
+
+<body>
+
+    <header class="header-store">
+        <section>
+            <div class="logotipo">
+                <a href="index.html"><img src="assets/images/logotipo-kindacat.svg" alt="Logotipo"></a>
+            </div>
+            <div class="main-menu">
+                <div class="main-menu-field">
+                    <input type="checkbox" id="main-menu-switch">
+                    <label for="main-menu-switch" class="main-menu-closed"><span
+                            class="material-symbols-outlined">menu</span></label>
+                </div>
+                <div class="nav-tab">
+                    <div class="layer-nav-tab">
+                        <div class="top-nav-tab">
+                            <span>Produtos</span>
+                            <label for="main-menu-switch" class="main-menu-opened"><span
+                                    class="material-symbols-outlined">close</span></label>
+                        </div>
+                        <menu>
+                            <li><a href="#">Bebedouros</a></li>
+                            <li><a href="#">Arranhadores</a></li>
+                            <li><a href="categoria.html">Camas</a></li>
+                            <li><a href="#">Coleiras</a></li>
+                        </menu>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <search>
+                <form class="search-store" action="#">
+                    <button type="submit"><img alt="Pesquisar" width="20px" height="100%"
+                            src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/search/default/24px.svg"></button>
+                    <input type="search" placeholder="Pesquisar...">
+                </form>
+            </search>
+        </section>
+
+        <section class="user-things">
+            <div class="login-logout">
+                <span class="material-symbols-outlined">person</span>
+                <span>Iniciar Sessão</span>
+            </div>
+            <div class="shopping-cart">
+                <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+        </section>
+
+    </header>
+
+    <main>
+
+        <section class="slide-show-products">
+            <div class="slide-wrapper">
+                <a href="#" class="slide">
+                    <h1>Arranhadores Piu Piu</h1>
+                    <p>50% de desconto esta semana.</p>
+                </a>
+                <a href="#" class="slide">
+                    <h1>Camas Gatarracho</h1>
+                    <p>Porque o seu gato merce um sono descansado.</p>
+                </a>
+                <a href="#" class="slide">
+                    <h1>Fontes Pinga Pinga</h1>
+                    <p>O seu gato não terá mais sede.</p>
+                </a>
+                <a href="#" class="slide">
+                    <h1>Coleiras Catita</h1>
+                    <p>O seu gato é sempre o primeiro.</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="quick-info">
+            <div>
+                <span class="material-symbols-outlined">local_shipping</span>
+                <span>Envio Gratuíto</span>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">support_agent</span>
+                <span>Suporte</span>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">euro_symbol</span>
+                <span>Preços Baixos</span>
+            </div>
+            <div>
+                <span class="material-symbols-outlined">payments</span>
+                <span>Opções de Pagamento</span>
+            </div>
+        </section>
+
+        <section class="products-row promotions">
+            <h2>Promoções</h2>
+            <div class="carousel-products">
+                <div class="carousel-products-wrapper">
+                    <div class="product-sample">
+                        <a href="#">
+                            <img src="assets/images/products/cama-gato.jpg" alt="produto" width="100%" height="auto"
+                                loading="lazy" decoding="async">
+                        </a>
+                        <div class="price">
+                            <span class="normal">25.00€</span>
+                            <span class="sale">20.00€</span>
+                        </div>
+                        <figcaption><a href="#">Produto A</a></figcaption>
+                        <div class="add-to-cart-field">
+                            <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                            <span class="material-symbols-outlined">favorite</span>
+                        </div>
+                    </div>
+                    <div class="product-sample">
+                        <a href="#">
+                            <img src="assets/images/products/arranhador-de-madeira-gatos.jpg" alt="produto"
+                                width="100%" height="auto" loading="lazy" decoding="async">
+                        </a>
+                        <div class="price">
+                            <span class="normal">30.00€</span>
+                            <span class="sale">20.00€</span>
+                        </div>
+                        <figcaption><a href="#">Produto B</a></figcaption>
+                        <div class="add-to-cart-field">
+                            <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                            <span class="material-symbols-outlined">favorite</span>
+                        </div>
+                    </div>
+                    <div class="product-sample">
+                        <a href="#">
+                            <img src="assets/images/products/bebedouro-gato.jpg" alt="produto" width="100%" height="auto"
+                                loading="lazy" decoding="async">
+                        </a>
+                        <div class="price">
+                            <span class="normal">40.00€</span>
+                            <span class="sale">32.00€</span>
+                        </div>
+                        <figcaption><a href="#">Produto C</a></figcaption>
+                        <div class="add-to-cart-field">
+                            <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                            <span class="material-symbols-outlined">favorite</span>
+                        </div>
+                    </div>
+                    <div class="product-sample">
+                        <a href="#">
+                            <img src="assets/images/products/coleira-gato.jpg" alt="produto" width="100%" height="auto"
+                                loading="lazy" decoding="async">
+                        </a>
+                        <div class="price">
+                            <span class="normal">60.00€</span>
+                            <span class="sale">55.00€</span>
+                        </div>
+                        <figcaption><a href="#">Produto D</a></figcaption>
+                        <div class="add-to-cart-field">
+                            <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                            <span class="material-symbols-outlined">favorite</span>
+                        </div>
+                    </div>
+                    <div class="product-sample">
+                        <a href="#">
+                            <img src="assets/images/products/caixa-areia-fechada.jpg" alt="produto" width="100%" height="auto"
+                                loading="lazy" decoding="async" />
+                        </a>
+                        <div class="price">
+                            <span class="normal">32.00€</span>
+                            <span class="sale">25.00€</span>
+                        </div>
+                        <figcaption><a href="#">Produto E</a></figcaption>
+                        <div class="add-to-cart-field">
+                            <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                            <span class="material-symbols-outlined">favorite</span>
+                        </div>
+                    </div>
+                    <div class="product-sample">
+                        <a href="#">
+                            <img src="assets/images/products/casinha-gato.jpg" alt="produto" width="100%" height="auto"
+                                loading="lazy" decoding="async">
+                        </a>
+                        <div class="price">
+                            <span class="normal">45.00€</span>
+                            <span class="sale">35.00€</span>
+                        </div>
+                        <figcaption><a href="#">Produto F</a></figcaption>
+                        <div class="add-to-cart-field">
+                            <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                            <span class="material-symbols-outlined">favorite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-columns">
+            <div>
+                <span class="footer-column-title">Sobre Nós</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, purus quis lacinia feugiat,
+                    arcu metus pharetra lorem, nec volutpat lacus ipsum vitae sem.</p>
+            </div>
+            <div>
+                <span class="footer-column-title">Informações</span>
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Política de Utilização</a></li>
+                    <li><a href="#">Termos e Condições</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="footer-column-title">Ajuda</span>
+                <ul>
+                    <li><a href="#">Contactos Úteis</a></li>
+                    <li><a href="#">Perguntas Frequentes</a></li>
+                    <li><a href="#">Como Encomendar</a></li>
+                    <li><a href="#">Métodos de Pagamentos</a></li>
+                    <li><a href="#">Envios de Encomendas</a></li>
+                    <li><a href="#">Cancelamento, Trocas ou Devoluções</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="assets/images/logotipo-kindacat.svg" alt="logotipo" width="100%" height="auto">
+                <ul class="store-contacts">
+                    <li class="contact-mailto"><a href="mailto:info@kindacat.com">info@kindacat.com</a></li>
+                    <li class="contact-phone">
+                        <div>
+                            <a href="tel:+351967193047">(+351) 987 654 321</a>
+                            <span>(Chamada para rede móvel nacional)</span>
+                        </div>
+                    </li>
+                    <li class="contact-address">
+                        <address>
+                            kindacat Lda.<br>
+                            Rua do teste Nº 123<br>
+                            4480-876 Vila do Conde<br>
+                            Portugal<br>
+                        </address>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-copyright">&copy; 2023 kindacat Lda. Todos os direitos reservados</section>
+    </footer>
+    <script type="text/javascript" src="assets/js/index.js?2023121001"></script>
+</body>
+
+</html>

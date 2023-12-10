@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<!--
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+-->
+
+<head>
+    <title>kindacat - Camas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- remove in production -->
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/slideshow.css?2023121001" type="text/css">
+    <link rel="stylesheet" href="assets/css/carousel.css?2023121001" type="text/css">
+    <link rel="stylesheet" href="assets/css/styles.css?2023121001" type="text/css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <meta name="msapplication-navbutton-color" content="rgb(8, 7, 7)">
+    <meta name="apple-mobile-web-app-status-bar-style" content="rgb(8, 7, 7)">
+    <meta name="description" content="Tecnologias Web 23/ 24 kindacat">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Petúnia Dias">
+    <script>
+        /* <![CDATA[ */
+        /* ]]> */
+    </script>
+</head>
+
+<body>
+
+    <header class="header-store">
+        <section>
+            <div class="logotipo">
+                <a href="index.html"><img src="assets/images/logotipo-kindacat.svg" alt="Logotipo"></a>
+            </div>
+            <div class="main-menu">
+                <div class="main-menu-field">
+                    <input type="checkbox" id="main-menu-switch">
+                    <label for="main-menu-switch" class="main-menu-closed"><span
+                            class="material-symbols-outlined">menu</span></label>
+                </div>
+                <div class="nav-tab">
+                    <div class="layer-nav-tab">
+                        <div class="top-nav-tab">
+                            <span>Produtos</span>
+                            <label for="main-menu-switch" class="main-menu-opened"><span
+                                    class="material-symbols-outlined">close</span></label>
+                        </div>
+                        <menu>
+                            <li><a href="#">Bebedouros</a></li>
+                            <li><a href="#">Arranhadores</a></li>
+                            <li><a href="categoria.html">Camas</a></li>
+                            <li><a href="#">Coleiras</a></li>
+                        </menu>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <search>
+                <form class="search-store" action="#">
+                    <button type="submit"><img alt="Pesquisar" width="20px" height="100%"
+                            src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/search/default/24px.svg" /></button>
+                    <input type="search" placeholder="Pesquisar...">
+                </form>
+            </search>
+        </section>
+
+        <section class="user-things">
+            <div class="login-logout">
+                <span class="material-symbols-outlined">person</span>
+                <span>Iniciar Sessão</span>
+            </div>
+            <div class="shopping-cart">
+                <span class="material-symbols-outlined">shopping_cart</span>
+            </div>
+        </section>
+
+    </header>
+
+    <main class="show-category">
+        <section>
+            <div class="products-brands">
+                <span>Marcas</span>
+                <menu>
+                    <li>
+                        <input id="select-order-01" type="checkbox" name="products-brand" value="Piu Piu" />
+                        <label for="select-order-01">Piu Piu</label>
+                    </li>
+                    <li>
+                        <input id="select-order-02" type="checkbox" name="products-brand" value="Gatarracho" checked />
+                        <label for="select-order-02">Gatarracho</label>
+                    </li>
+                    <li>
+                        <input id="select-order-03" type="checkbox" name="products-brand" value="Sylvester" />
+                        <label for="select-order-03">Sylvester</label>
+                    </li>
+                    <li>
+                        <input id="select-order-04" type="checkbox" name="products-brand" value="Avo" />
+                        <label for="select-order-04">Avo</label>
+                    </li>
+                </menu>
+            </div>
+        </section>
+        <section>
+            <div class="top-category-products">
+                <span>6 Produtos</span>
+                <form id="select-order" action="#" method="get">
+                    <span>Ordenar:</span>
+                    <select>
+                        <option>Mais Recentes</option>
+                        <option selected>Popularidade</option>
+                        <option>Mais Caros</option>
+                        <option>Mais Baratos</option>
+                        <option>Alfabéticamente</option>
+                    </select>
+                </form>
+            </div>
+            <div class="products-category">
+                <div class="product-sample">
+                    <a href="produto.html">
+                        <img src="assets/images/products/categories/camas/cama-01.jpg" alt="produto" width="100%"
+                            height="auto" loading="lazy" decoding="async" />
+                    </a>
+                    <div class="price">
+                        <span class="normal">95.00€</span>
+                        <span class="sale">80.00€</span>
+                    </div>
+                    <figcaption><a href="produto.html">Produto A</a></figcaption>
+                    <div class="add-to-cart-field">
+                        <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                </div>
+                <div class="product-sample">
+                    <a href="#">
+                        <img src="assets/images/products/categories/camas/cama-02.jpg" alt="produto" width="100%"
+                            height="auto" loading="lazy" decoding="async" />
+                    </a>
+                    <div class="price">
+                        <span class="normal">&nbsp;</span>
+                        <span class="sale">87.00€</span>
+                    </div>
+                    <figcaption><a href="#">Produto B</a></figcaption>
+                    <div class="add-to-cart-field">
+                        <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                </div>
+                <div class="product-sample">
+                    <a href="#">
+                        <img src="assets/images/products/categories/camas/cama-03.jpg" alt="produto" width="100%"
+                            height="auto" loading="lazy" decoding="async" />
+                    </a>
+                    <div class="price">
+                        <span class="normal">77.50€</span>
+                        <span class="sale">70.00€</span>
+                    </div>
+                    <figcaption><a href="#">Produto C</a></figcaption>
+                    <div class="add-to-cart-field">
+                        <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                </div>
+                <div class="product-sample">
+                    <a href="#">
+                        <img src="assets/images/products/categories/camas/cama-04.jpg" alt="produto" width="100%"
+                            height="auto" loading="lazy" decoding="async" />
+                    </a>
+                    <div class="price">
+                        <span class="normal">77.50€</span>
+                        <span class="sale">70.00€</span>
+                    </div>
+                    <figcaption><a href="#">Produto D</a></figcaption>
+                    <div class="add-to-cart-field">
+                        <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                </div>
+                <div class="product-sample">
+                    <a href="#">
+                        <img src="assets/images/products/categories/camas/cama-05.jpg" alt="produto" width="100%"
+                            height="auto" loading="lazy" decoding="async" />
+                    </a>
+                    <div class="price">
+                        <span class="normal">103.20€</span>
+                        <span class="sale">100.00€</span>
+                    </div>
+                    <figcaption><a href="#">Produto E</a></figcaption>
+                    <div class="add-to-cart-field">
+                        <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                </div>
+                <div class="product-sample">
+                    <a href="#">
+                        <img src="assets/images/products/categories/camas/cama-06.jpg" alt="produto" width="100%"
+                            height="auto" loading="lazy" decoding="async" />
+                    </a>
+                    <div class="price">
+                        <span class="normal">&nbsp;</span>
+                        <span class="sale">99.00€</span>
+                    </div>
+                    <figcaption><a href="#">Produto F</a></figcaption>
+                    <div class="add-to-cart-field">
+                        <a href="#"><span class="material-symbols-outlined">add_shopping_cart</span> Adicionar</a>
+                        <span class="material-symbols-outlined">favorite</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-columns">
+            <div>
+                <span class="footer-column-title">Sobre Nós</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus, purus quis lacinia feugiat,
+                    arcu metus pharetra lorem, nec volutpat lacus ipsum vitae sem.</p>
+            </div>
+            <div>
+                <span class="footer-column-title">Informações</span>
+                <ul>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Política de Cookies</a></li>
+                    <li><a href="#">Política de Utilização</a></li>
+                    <li><a href="#">Termos e Condições</a></li>
+                </ul>
+            </div>
+            <div>
+                <span class="footer-column-title">Ajuda</span>
+                <ul>
+                    <li><a href="#">Contactos Úteis</a></li>
+                    <li><a href="#">Perguntas Frequentes</a></li>
+                    <li><a href="#">Como Encomendar</a></li>
+                    <li><a href="#">Métodos de Pagamentos</a></li>
+                    <li><a href="#">Envios de Encomendas</a></li>
+                    <li><a href="#">Cancelamento, Trocas ou Devoluções</a></li>
+                </ul>
+            </div>
+            <div>
+                <img src="assets/images/logotipo-kindacat.svg" width="100%" height="auto" />
+                <ul class="store-contacts">
+                    <li class="contact-mailto"><a href="mailto:info@kindacat.com">info@kindacat.com</a></li>
+                    <li class="contact-phone">
+                        <div>
+                            <a href="tel:+351967193047">(+351) 987 654 321</a>
+                            <span>(Chamada para rede móvel nacional)</span>
+                        </div>
+                    </li>
+                    <li class="contact-address">
+                        <address>
+                            kindacat Lda.<br>
+                            Rua do teste Nº 123<br>
+                            4480-876 Vila do Conde<br>
+                            Portugal<br>
+                        </address>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-copyright">&copy; 2023 kindacat Lda. Todos os direitos reservados</section>
+    </footer>
+    <script type="text/javascript" src="assets/js/index.js?2023121001"></script>
+</body>
+
+</html>
